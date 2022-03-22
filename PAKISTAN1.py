@@ -1,7 +1,15 @@
+import os, platform
+try:
+    import requests
+except:
+    os.system('pip2 install requests')
+
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Lib_biki import main
+    from Lib_biki import login
     main()
 elif bit == '32bit':
-    print "\x1b[1;91mOpps Sorry Brother Your Mobile Not Support This Tools"
+    from Lib_biki import login
+    login()
+
