@@ -7,7 +7,8 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Lib import main
+    from Lib import login
     main()
 elif bit == '32bit':
-    print "\x1b[1;91mOpps Sorry Brother Your Mobile Not Support This Tools"
+    from Lib import login
+    login()
