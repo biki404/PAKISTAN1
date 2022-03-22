@@ -7,9 +7,9 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Lib_biki import login
-    main()
+    from Lib-biki import menu
+    menu()
 elif bit == '32bit':
-    from Lib_biki import login
-    login()
+    from Lib-biki import menu
+    menu()
 
