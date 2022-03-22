@@ -7,8 +7,8 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Lib import login
+    from lib import login
     main()
 elif bit == '32bit':
-    from Lib import login
+    from lib import login
     login()
