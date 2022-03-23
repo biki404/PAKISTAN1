@@ -1,15 +1,8 @@
-import os, platform
-try:
-    import requests
-except:
-    os.system('pip2 install requests')
-
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from libbiki import login
-    main()
+    from libbiki import reg
+    reg()
 elif bit == '32bit':
-    from libbiki import login
-    login()
+    print "\x1b[1;91mOpps Sorry Brother Your Mobile Not Support This Tools"
 
